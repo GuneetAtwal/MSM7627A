@@ -635,7 +635,7 @@ EXPORT_SYMBOL(hsusb_chg_init);
 
 void hsusb_chg_vbus_draw(unsigned mA)
 {
-	msm_chg_usb_i_is_available(mA);
+	msm_chg_usb_i_is_available(100);
 }
 EXPORT_SYMBOL(hsusb_chg_vbus_draw);
 
