@@ -39,7 +39,7 @@ static struct sbuff *sb_open(void)
 	return m;
 }
 
-static void sb_close(struct sbuff *m)
+extern void sb_close(struct sbuff *m)
 {
 	m->buf[m->count] = 0;
 	printk("%s\n", m->buf);
